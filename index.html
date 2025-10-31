@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Sales Masterclass</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.5s ease-out;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details summary::marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-950 text-white">
+  
+  <!-- Hero -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop')"></div>
+    <div class="relative mx-auto max-w-6xl px-6 py-20">
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight fade-in-up">
+        Real Estate Sales Masterclass
+      </h1>
+      <p class="mt-4 max-w-3xl text-slate-200">
+        A focused 2‑hour training designed to equip you with practical, actionable strategies for
+        winning in the real estate industry — hosted by <span class="font-semibold">Dr. Stephen Akintayo</span>.
+      </p>
+
+      <!-- Quick facts -->
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+          <div class="flex items-center gap-2 text-slate-200">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span class="text-sm uppercase tracking-wide text-slate-300">Date</span>
+          </div>
+          <p class="mt-2 text-lg font-semibold">Saturday, 15 November 2025</p>
+        </div>
+
+        <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+          <div class="flex items-center gap-2 text-slate-200">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span class="text-sm uppercase tracking-wide text-slate-300">Time</span>
+          </div>
+          <p class="mt-2 text-lg font-semibold">8:00 AM – 10:00 AM</p>
+        </div>
+
+        <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+          <div class="flex items-center gap-2 text-slate-200">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="text-sm uppercase tracking-wide text-slate-300">Location</span>
+          </div>
+          <p class="mt-2 text-lg font-semibold">Lekki, Lagos (in‑person) • Virtual (online)</p>
+        </div>
+
+        <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+          <div class="flex items-center gap-2 text-slate-200">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span class="text-sm uppercase tracking-wide text-slate-300">Capacity</span>
+          </div>
+          <p class="mt-2 text-lg font-semibold">100 slots only • Entry is FREE</p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="https://www.stephenakintayo.com/sales"
+          class="rounded-2xl bg-white px-5 py-3 font-semibold text-slate-900 shadow hover:shadow-lg transition"
+        >
+          Register Now
+        </a>
+        <a href="#tickets" class="rounded-2xl border border-white/30 px-5 py-3 font-semibold hover:bg-white/10 transition">
+          View Tickets
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- What You'll Learn -->
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold">What you'll learn in 2 hours</h2>
+    <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-2xl bg-white/5 p-5 shadow-sm ring-1 ring-white/10">
+        <p class="leading-relaxed text-slate-200">Proven sales strategies for closing high‑value deals</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 shadow-sm ring-1 ring-white/10">
+        <p class="leading-relaxed text-slate-200">Spotting profitable property opportunities</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 shadow-sm ring-1 ring-white/10">
+        <p class="leading-relaxed text-slate-200">Building credibility & long‑term client relationships</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 shadow-sm ring-1 ring-white/10">
+        <p class="leading-relaxed text-slate-200">Leveraging systems & scripts that scale</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 shadow-sm ring-1 ring-white/10">
+        <p class="leading-relaxed text-slate-200">Avoiding common pitfalls in real estate sales</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 shadow-sm ring-1 ring-white/10">
+        <p class="leading-relaxed text-slate-200">Action plan to kickstart or scale your results</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets -->
+  <section id="tickets" class="mx-auto max-w-6xl px-6 pb-8">
+    <div class="flex items-end justify-between">
+      <h2 class="text-2xl md:text-3xl font-bold">Choose your ticket</h2>
+      <p class="text-slate-300">Both ticket types are <span class="font-semibold">FREE</span>. Limited combined capacity of 100.</p>
+    </div>
+    <div class="mt-8 grid gap-6 md:grid-cols-2">
+      <!-- Physical Ticket -->
+      <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 shadow-sm">
+        <div class="flex items-center gap-3">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+            <line x1="15" y1="9" x2="9" y2="15"></line>
+            <line x1="9" y1="9" x2="15" y2="15"></line>
+          </svg>
+          <h3 class="text-xl font-bold">Physical (In‑Person) — Just for 100 People Only</h3>
+        </div>
+        <ul class="mt-4 space-y-2 list-disc pl-6 text-slate-200">
+          <li>Live masterclass with Dr. Stephen Akintayo</li>
+          <li>Networking with attendees</li>
+          <li>Venue: Lekki, Lagos (details below)</li>
+          <li>Check‑in from 7:30 AM</li>
+        </ul>
+        <a
+          href="https://www.stephenakintayo.com/sales"
+          class="mt-6 inline-block rounded-2xl bg-white px-5 py-3 font-semibold text-slate-900 shadow hover:shadow-lg transition"
+        >
+          Save my seat (Physical)
+        </a>
+      </div>
+
+      <!-- Virtual Ticket -->
+      <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 shadow-sm">
+        <div class="flex items-center gap-3">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+            <line x1="15" y1="9" x2="9" y2="15"></line>
+            <line x1="9" y1="9" x2="15" y2="15"></line>
+          </svg>
+          <h3 class="text-xl font-bold">Virtual (Online)</h3>
+        </div>
+        <ul class="mt-4 space-y-2 list-disc pl-6 text-slate-200">
+          <li>Join via secure livestream</li>
+          <li>Real‑time Q&A</li>
+          <li>Recording access (limited time)</li>
+          <li>Best for participants outside Lagos</li>
+        </ul>
+        <a
+          href="https://www.stephenakintayo.com/sales"
+          class="mt-6 inline-block rounded-2xl bg-white px-5 py-3 font-semibold text-slate-900 shadow hover:shadow-lg transition"
+        >
+          Reserve virtual access
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue -->
+  <section id="venue" class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid gap-8 lg:grid-cols-2">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold flex items-center gap-2">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Event Venue
+        </h2>
+        <p class="mt-4 text-slate-200">
+          <span class="font-semibold">Lekki, Lagos, Nigeria</span>. The exact venue address and arrival instructions will be sent via
+          email upon confirmation of your registration for the <span class="whitespace-nowrap">physical ticket</span>.
+        </p>
+        <ul class="mt-4 space-y-2 text-slate-300 list-disc pl-5">
+          <li>Free entry • limited seats — arrive early for check‑in</li>
+          <li>Parking and accessibility information will be included in your confirmation email</li>
+          <li>Dress code: smart casual</li>
+        </ul>
+      </div>
+      <div class="h-72 w-full overflow-hidden rounded-2xl ring-1 ring-white/10">
+        <iframe
+          title="Map – Lekki Lagos"
+          src="https://www.google.com/maps?q=Lekki,+Lagos&output=embed"
+          class="h-full w-full"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="mx-auto max-w-6xl px-6 pb-16">
+    <h2 class="text-2xl md:text-3xl font-bold">Event schedule</h2>
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <p class="text-sm text-slate-300">7:30 AM</p>
+        <p class="mt-1 font-semibold">Arrival & Check‑in</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <p class="text-sm text-slate-300">8:00 AM</p>
+        <p class="mt-1 font-semibold">Masterclass Session begins</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <p class="text-sm text-slate-300">9:40 AM</p>
+        <p class="mt-1 font-semibold">Q&A and Action Plan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speaker -->
+  <section id="speaker" class="mx-auto max-w-6xl px-6 pb-16">
+    <h2 class="text-2xl md:text-3xl font-bold">About the Speaker</h2>
+    <div class="mt-6 rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <p class="text-slate-200 leading-relaxed">
+          <span class="font-semibold">Dr. Stephen Akintayo</span> is a globally recognized investment coach, author, and
+          philanthropist. Through the Stephen Akintayo Foundation, he has empowered thousands of entrepreneurs and
+          real estate professionals across Africa and beyond.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/Stephen-Akintayo-scaled.jpg"
+          alt="Dr. Stephen Akintayo"
+          class="rounded-2xl shadow-lg ring-1 ring-white/10"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="mx-auto max-w-6xl px-6 pb-20">
+    <h2 class="text-2xl md:text-3xl font-bold">Frequently asked questions</h2>
+    <div class="mt-6 grid gap-4 md:grid-cols-2">
+      <details class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <summary class="cursor-pointer list-none font-semibold">Is the event really free?</summary>
+        <p class="mt-2 text-slate-200">Yes. Entry is free for both virtual and physical tickets. Seats are limited to 100 in total.</p>
+      </details>
+      
+      <details class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <summary class="cursor-pointer list-none font-semibold">Will I receive the venue address?</summary>
+        <p class="mt-2 text-slate-200">Yes. If you register for the physical ticket, the exact venue and arrival details will be emailed to you after confirmation.</p>
+      </details>
+      
+      <details class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <summary class="cursor-pointer list-none font-semibold">How do I join virtually?</summary>
+        <p class="mt-2 text-slate-200">A unique livestream link will be sent to your registered email 24 hours before the session.</p>
+      </details>
+      
+      <details class="rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+        <summary class="cursor-pointer list-none font-semibold">Can I transfer my ticket?</summary>
+        <p class="mt-2 text-slate-200">You may request a name change up to 48 hours before the event by replying to your confirmation email.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-6 py-10 grid gap-6 md:grid-cols-3 items-start">
+      <div>
+        <h3 class="font-bold text-lg">Stephen Akintayo Foundation</h3>
+        <p class="mt-2 text-slate-300">Inspiring growth. Empowering dreams.</p>
+      </div>
+      <div class="space-y-2">
+        <a class="flex items-center gap-2 text-slate-300 hover:text-white transition" href="mailto:products@stephenakintayo.com">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          products@stephenakintayo.com
+        </a>
+        <a class="flex items-center gap-2 text-slate-300 hover:text-white transition" href="tel:+12815050527">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          +1 (281) 505‑0527
+        </a>
+        <a class="flex items-center gap-2 text-slate-300 hover:text-white transition" href="tel:+2348167901719">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          +234 816 790 1719
+        </a>
+        <a class="flex items-center gap-2 text-slate-300 hover:text-white transition" href="https://www.stephenakintayo.com/sales">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          www.stephenakintayo.com/sales
+        </a>
+      </div>
+      <div class="md:text-right">
+        <a
+          href="https://www.stephenakintayo.com/sales"
+          class="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 font-semibold text-slate-900 shadow hover:shadow-lg transition"
+        >
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+            <line x1="15" y1="9" x2="9" y2="15"></line>
+            <line x1="9" y1="9" x2="15" y2="15"></line>
+          </svg>
+          Register Free
+        </a>
+      </div>
+    </div>
+    <p class="pb-8 text-center text-xs text-slate-400">© <span id="current-year"></span> Stephen Akintayo Foundation. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add intersection observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '0';
+          entry.target.style.transform = 'translateY(20px)';
+          entry.target.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+          
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, 100);
+          
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
